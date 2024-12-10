@@ -1,0 +1,106 @@
+/*Cada width decir de donde sale la medida*/
+body{
+    width:1260px;
+    height:545px;
+    padding-top:45px;
+    background-color: lightseagreen;
+    margin:0px;
+}
+main{
+    background-color: bisque;
+    height: 545px;
+    /* overflow:hidden; */
+}
+#divformulario{
+    padding:30px 10px 0px 10px ;
+    height:370px;/*400px-30px*/
+    margin:0px 10px 0px 20px;
+    float:left;
+    background-color: lightpink;
+    width:780px; /*800px-20px(10+10)*/
+}
+aside{
+    padding:50px 0px 0px 30px;
+    width: 370px; /*400px-30(10+20)*/
+    float:right;
+    background-color: lightblue;
+    height:350px;/*400px-50px
+    /* height:1000px; */
+    margin:0px 20px 0px 10px;
+}
+footer{
+    width:1260px;
+    height: 100px;
+    background-color: lightgoldenrodyellow;
+    clear:both; /*Limpia la propiedad del float*/
+}
+/* Elementos caja izquierda */
+.formulario{
+    background-color: lightgrey;
+    padding:1em 0 1em 70px;
+    
+}
+.formulario input[type="text"] {
+    width: 490px;
+    padding-left: 10px;
+    height:1.8em;
+    margin:1em 0;
+    display:block;
+}
+.formulario input[type="submit"]{
+width: 150px;
+height:2em;
+background-color:#D8D8D8;
+margin: auto;
+}
+/* Elemento de la caja derecha */
+img{
+    width: 150px;
+    height:auto;
+    margin:50px 0 0 30px;
+}
+/*VERSIÓN 3-absolute y fixed*/
+#cajaverde{
+    background-color: lightgreen; /*Color de fondo de caja con position absolute*/
+    position:absolute; /*Position absolute*/
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+}
+#cajamorada{
+    background-color: purple;/*Color de fondo de caja con position absolute*/
+    position:fixed; /*Position fixed*/
+    margin-top:20px;
+    width:100px;
+    height:60px;
+}
+/*VERSIÓN 4-relative*/
+#cajabeige{
+    background-color:beige;/*Color de fondo de caja con position absolute*/
+    position:relative; /*Position relative*/
+    width:200px;
+    height:100px;
+}
+/*VERSIÓN 5-sticky*/
+#cajablanca{
+    background-color: white;/*Color de fondo de caja con position sticky*/
+    position:sticky; /*Position sticky*/
+    top:20px; /*Si no lo ponemos sticky no funciona. Estableces que quede fijo en la parte de arriba a una diferencia del viewport de 20px*/
+    width:100px;
+    height:60px,
+}
+/*VERSIÓN 6-sticky y fixed*/
+#cajarosa{
+    background-color: pink;/*Color de fondo de caja con position sticky*/
+    position:sticky; /*Position sticky*/
+    top:50px; /*Si no lo ponemos sticky no funciona. Estableces que quede fijo en la parte de arriba a una diferencia del viewport de 20px*/
+    width:200px;
+    height:60px,
+}
+#cajaazul{
+    background-color: blue;/*Color de fondo de caja con position sticky*/
+    position:fixed; /*Position fixed*/
+    width:100px;
+    height:60px,
+}
